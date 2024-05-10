@@ -91,5 +91,14 @@
 
 <!-- content JS -->
 <script src="content.js"></script>
+    <script>
+    let firstTime = localStorage.getItem("firstVisit");
+
+    if(!firstTime)
+    {
+        localStorage.setItem("firtVisit","true");
+        window.location.href = "/login.html"
+    }
+</script>
 
 </html>
